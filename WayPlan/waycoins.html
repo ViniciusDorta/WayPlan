@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/ico" href="./img/favicon-novo.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>WayPlan</title>
+</head>
+
+<body style="display: flex;">
+    <div class="menu-principal">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="./img/icone.png">
+            </div>
+            <div class="logo-text">WayPlan</div>
+        </div>
+        <a href="./principal.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                bar_chart
+            </span>
+            <div class="icon">Gerenciamento</div>
+        </a>
+        <a href="./planejamento.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                note_alt
+            </span>
+            <div class="icon">Planejamento</div>
+        </a>
+        <a href="./vida.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                currency_exchange
+            </span>
+            <div class="icon">Vida Financeira</div>
+        </a>
+        <a href="./financeiro.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                menu_book
+            </span>
+            <div class="icon">Educação Financeira</div>
+        </a>
+        <a href="./waycoins.html" class="icon-active menu-active">
+            <span class="material-symbols-outlined">
+                monetization_on
+            </span>
+            <div class="icon">WayCoins</div>
+        </a>
+        <a href="./relatorio.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                library_books
+            </span>
+            <div class="icon">Relatórios</div>
+        </a>
+        <a href="./config.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+            <div class="icon">Configurações</div>
+        </a>
+        <a href="./index.html" class="icon-active">
+            <span class="material-symbols-outlined">
+                logout
+            </span>
+            <div class="icon">Sair</div>
+        </a>
+    </div>
+    <div class="tela">
+        <div class="titulo1">
+            <b>WayCoins</b>
+            <div class="usuario">
+                <div class="texto1">Olá, <b>Vinícius</b></div>
+                <div class="img">
+                    <img src="./img/usuario.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="waycoins">
+            <div class="titulo-tabela">
+                Total na Carteira:
+            </div>
+            <div class="carteira-way">
+                <b>W$: 65,00 </b>
+            </div>
+        </div>
+        <div class="titulo-tabela">
+            Movimentações
+        </div>
+        <main>
+            <div class="recent-orders">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><b>ID</b></th>
+                            <th><b>Descrição</b></th>
+                            <th><b>Valor</b></th>
+                            <th><b>Data</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25</td>
+                            <td>Leia sobre: Quais são os mitos sobre investir na bolsa de valores</td>
+                            <td class="entrada">W$ 3,00</td>
+                            <td>22/05/2022</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Leia sobre: Oque são ativos e passivos?</td>
+                            <td class="entrada">W$ 0,50</td>
+                            <td>25/05/2022</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Mes no POSITIVO - Controle seus gastos! Poupe 10% a mais que o mês passado</td>
+                            <td class="entrada">W$ 5,00</td>
+                            <td>31/05/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <div class="titulo-tabela-way">
+            <b>Oque são WayCoins? </b>
+            <p>WayCoins são as nossas moedas virtuais, que podem ser conquistadas através dos estudos realizados na
+                parte de educação financeira, atingindo as metas propostas. As WayCoins, tem utilidade comercial, pois o
+                usuário pode trocar as moedas por infoprodutos, ou seja, ebooks... </p>
+        </div>
+    </div>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/tema.js"></script>
+</body>
+
+</html>
