@@ -875,6 +875,9 @@ html,body{
 
 /* Cadastro de Receita e Despesa */
 
+.modal-content {
+    background-color: var(--main-color);
+}
 .cadastrar-dados {
     display: flex;
     flex-direction: column;
