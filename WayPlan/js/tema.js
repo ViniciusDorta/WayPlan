@@ -24,7 +24,8 @@ $(function () {
         if (check.checked) {
             setThemeDark()
             localStorage.setItem("theme", "dark")
-        } else {
+        }
+        else {
             setThemeLight()
             localStorage.setItem("theme", "light")
         }
@@ -32,5 +33,13 @@ $(function () {
 })
 
 $('#icon').click(function () {
-    alert('check')
+    if (document.getElementById('bar').style.height == '100%') {
+        $('#bar').css({ 'height': '0' })
+        $('body').css({ 'overflow': 'auto' })
+    }
+    else {
+        $('#bar').css({ 'height': '100%' })
+        $('body').css({ 'overflow': 'hidden' })
+        window.scrollTo(0, 0)
+    }
 })

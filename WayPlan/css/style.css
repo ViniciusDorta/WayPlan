@@ -227,13 +227,58 @@ a {
 
 /* tela principal */
 
-.nav-bar-mobile {
+.mobile {
+    font-size: 25px;
     display: flex;
-    justify-content: end;
-    border: solid red;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+    animation: animate 1.5s infinite;
 }
 
-.bar-mobile {}
+@keyframes animate {
+    0% {
+        top: 0px;
+        animation-delay: 2s;
+    }
+
+    50% {
+        top: 8px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.nav-bar-mobile-content {
+    transition: 0.5s;
+    height: 0;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-bar-mobile {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+    height: 100vh;
+}
+
+.bar-mobile {
+    display: flex;
+    width: 100%;
+    background-color: #9400D3;
+    padding: 10px;
+    color: var(--secondary-color);
+    justify-content: center;
+}
 
 .menu-principal {
     display: flex;
@@ -335,9 +380,9 @@ a {
     margin-top: 100px;
 }
 
-.icon-active:nth-last-child(1) {
+/* .icon-active:nth-last-child(1) {
     margin-top: 50px;
-}
+} */
 
 .icon-active {
     display: flex;
@@ -1059,22 +1104,41 @@ body {
 
 
 @media (max-width: 575.98px) {
+
+
+
+    .nav-bar-mobile {
+        display: flex;
+
+    }
+
     .tela {
-        border: 2px red solid;
         width: 100%;
         left: 0;
+        margin-top: 20px;
     }
 
     .box {
-        width: 100%;
+        width: 65%;
     }
+
+    .box h1,
+    .box h2,
+    .box h3 {
+        font-size: 20px;
+    }
+
+    .caixas b {
+        font-size: 20px;
+    }
+
 
     .caixas {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .menu-principal {
-        border: 2px solid red;
         z-index: 9999;
         width: 80%;
         transform: translate(-100%, 0);
@@ -1083,6 +1147,20 @@ body {
     .titulo1 {
         display: flex;
         flex-direction: column;
+        font-size: 20px;
+    }
+
+    .texto1 {
+        font-size: 18px;
+    }
+
+    .img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .titulo-tabela {
+        font-size: 20px;
     }
 }
 
